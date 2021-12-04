@@ -1,0 +1,30 @@
+C:\Users\Sergey\source\repos\OOP 4\OOP 4\obj\Debug\OOP 4.csproj.AssemblyReference.cache
+C:\Users\Sergey\source\repos\OOP 4\OOP 4\obj\Debug\OOP_4.Form1.resources
+C:\Users\Sergey\source\repos\OOP 4\OOP 4\obj\Debug\OOP_4.Properties.Resources.resources
+C:\Users\Sergey\source\repos\OOP 4\OOP 4\obj\Debug\OOP 4.csproj.GenerateResource.cache
+C:\Users\Sergey\source\repos\OOP 4\OOP 4\obj\Debug\OOP 4.csproj.CoreCompileInputs.cache
+C:\Users\Sergey\source\repos\OOP 4\OOP 4\bin\Debug\OOP 4.exe.config
+C:\Users\Sergey\source\repos\OOP 4\OOP 4\bin\Debug\OOP 4.exe
+C:\Users\Sergey\source\repos\OOP 4\OOP 4\bin\Debug\OOP 4.pdb
+C:\Users\Sergey\source\repos\OOP 4\OOP 4\obj\Debug\OOP 4.exe
+C:\Users\Sergey\source\repos\OOP 4\OOP 4\obj\Debug\OOP 4.pdb
+C:\Users\dilmu\Downloads\OOP 4-20211203T202920Z-001\OOP 4\bin\Debug\OOP 4.exe.config
+C:\Users\dilmu\Downloads\OOP 4-20211203T202920Z-001\OOP 4\bin\Debug\OOP 4.exe
+C:\Users\dilmu\Downloads\OOP 4-20211203T202920Z-001\OOP 4\bin\Debug\OOP 4.pdb
+C:\Users\dilmu\Downloads\OOP 4-20211203T202920Z-001\OOP 4\obj\Debug\OOP 4.csproj.AssemblyReference.cache
+C:\Users\dilmu\Downloads\OOP 4-20211203T202920Z-001\OOP 4\obj\Debug\OOP_4.Form1.resources
+C:\Users\dilmu\Downloads\OOP 4-20211203T202920Z-001\OOP 4\obj\Debug\OOP_4.Properties.Resources.resources
+C:\Users\dilmu\Downloads\OOP 4-20211203T202920Z-001\OOP 4\obj\Debug\OOP 4.csproj.GenerateResource.cache
+C:\Users\dilmu\Downloads\OOP 4-20211203T202920Z-001\OOP 4\obj\Debug\OOP 4.csproj.CoreCompileInputs.cache
+C:\Users\dilmu\Downloads\OOP 4-20211203T202920Z-001\OOP 4\obj\Debug\OOP 4.exe
+C:\Users\dilmu\Downloads\OOP 4-20211203T202920Z-001\OOP 4\obj\Debug\OOP 4.pdb
+C:\Users\dilmu\source\repos\OOP 4\OOP 4\bin\Debug\OOP 4.exe.config
+C:\Users\dilmu\source\repos\OOP 4\OOP 4\bin\Debug\OOP 4.exe
+C:\Users\dilmu\source\repos\OOP 4\OOP 4\bin\Debug\OOP 4.pdb
+C:\Users\dilmu\source\repos\OOP 4\OOP 4\obj\Debug\OOP 4.csproj.AssemblyReference.cache
+C:\Users\dilmu\source\repos\OOP 4\OOP 4\obj\Debug\OOP_4.Form1.resources
+C:\Users\dilmu\source\repos\OOP 4\OOP 4\obj\Debug\OOP_4.Properties.Resources.resources
+C:\Users\dilmu\source\repos\OOP 4\OOP 4\obj\Debug\OOP 4.csproj.GenerateResource.cache
+C:\Users\dilmu\source\repos\OOP 4\OOP 4\obj\Debug\OOP 4.csproj.CoreCompileInputs.cache
+C:\Users\dilmu\source\repos\OOP 4\OOP 4\obj\Debug\OOP 4.exe
+C:\Users\dilmu\source\repos\OOP 4\OOP 4\obj\Debug\OOP 4.pdb
