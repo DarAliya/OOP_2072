@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,8 +20,6 @@ namespace OOP_4
         MyCelebration mycelebration;
         private void start_button_Click(object sender, EventArgs e)
         {
-            //mydate2 = new MyDate(date_text,month_text,year_text);      
-            //mydate = new MyDate(Convert.ToInt32(date_text.Text), Convert.ToInt32(month_text.Text), Convert.ToInt32(year_text.Text));
             bool flag = true;
             try
             {
@@ -40,21 +38,23 @@ namespace OOP_4
             }
             if(flag==true)
             {
-                mydate = new MyDate(Convert.ToInt32(date_text.Text), Convert.ToInt32(month_text.Text), Convert.ToInt32(year_text.Text), proverka_text.Text);
+                mydate = new MyDate(Convert.ToInt32(date_text.Text), Convert.ToInt32(month_text.Text), Convert.ToInt32(year_text.Text));
                 mydate.visokos();
-                mydate.IsValid();
-                if (proverka_text.Text == "")
-                {
-                    mydate.NextDate(); 
+                if (mydate.IsValid()){
+                    proverka_text.Text = "";
+                    mydate.NextDate();
                 }
-                mydate.Visual(date_text, month_text, year_text, proverka_text);
+                else
+                {
+                    proverka_text.Text = "Неверный формат даты";
+                }               
+                date_text.Text = mydate.Visuald();
+                month_text.Text = mydate.Visualm();
+                year_text.Text = mydate.Visualy();
                 mycelebration = new MyCelebration(Convert.ToInt32(date_text.Text), Convert.ToInt32(month_text.Text), Convert.ToInt32(year_text.Text));
                 mycelebration.lets_celebrate(prazdnik_text);
-            }
-            
+            }         
                      
-        }
-
-        
+        }        
     }
 }
