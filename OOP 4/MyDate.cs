@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,92 +13,100 @@ namespace OOP_4
         protected int month;
         protected int year;
         protected int[] days;
-        protected string proverka;
-        public int DATE
+        public int Date
         {
             get { return date; }
             set { date = value; }
 
         }
-        public int MONTH
+        public int Month
         {
             get { return month; }
             set { month = value; }
              
         }
-        public int YEAR
+        public int Year
         {
             get { return year; }
             set { year = value; }
         }
-        public string Proverka
-        {
-            get { return proverka; }
-            set { proverka = value; }
-        }
-        public MyDate(int date, int month, int year, string proverka)
+        public MyDate(int date, int month, int year)
         {
             this.date = date;
             this.month = month;
             this.year = year;
             this.days = new int[12] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-            this.proverka = proverka;
         }
         public void NextDate()
         {
-            
-            if((DATE == days[MONTH - 1])&&(MONTH==12))
+            if((Date == days[Month - 1])&&(Month==12))
             {
-                MONTH=1;
-                DATE = 1;
-                YEAR++;
+                Month=1;
+                Date = 1;
+                Year++;
             }
-            else if(DATE == days[MONTH - 1])
+            else if(Date == days[Month - 1])
             {
-                MONTH++;
-                DATE = 1;
+                Month++;
+                Date = 1;
             }
-            else { DATE++; }
+            else { Date++; }
         }
         public void visokos()
         {
-            if(YEAR%4==0)
+            if(Year%400==0)
+            {
+               this.days[1] = 29;
+            }
+            else if(Year % 100 == 0)
+            {
+                this.days[1] = 28;
+            }
+            else if (Year % 4 == 0)
             {
                 this.days[1] = 29;
             }
             else { this.days[1] = 28; }
         }
-        public void Visual(TextBox date, TextBox month, TextBox year, Label proverka)
+        public string Visuald()
         {
-            date.Text = DATE.ToString();
-            month.Text = MONTH.ToString();
-            year.Text = YEAR.ToString();
-            proverka.Text = Proverka;
+            string t = Date.ToString();
+            return t;
         }
-        public void IsValid()
+        public string Visualm()
         {
-            if ((MONTH == 2) && (((YEAR % 4 == 0) && (DATE > 29)) || ((YEAR % 4 != 0) && (DATE > 28))))
+            string t = Month.ToString();
+            return t;
+        }
+        public string Visualy()
+        {
+            string t = Year.ToString();
+            return t;
+        }
+        public bool IsValid()
+        {
+            if ((Month == 2) && (((Year % 4 == 0) && (Date > 29)) || ((Year % 4 != 0) && (Date > 28))))
             {
-                Proverka = "Неверный формат даты";
-                DATE = 22;
-                MONTH = 11;
-                YEAR = 2021;
+                Date = 22;
+                Month = 11;
+                Year = 2021;
+                return false;
             }
-            else if ((DATE <= 0) || (DATE > 31) || (MONTH <= 0) || (MONTH > 12) || (YEAR <= 0))
+            else if ((Date <= 0) || (Date > 31) || (Month <= 0) || (Month > 12) || (Year <= 0))
             {
-                Proverka = "Неверный формат даты";
-                DATE =22;
-                MONTH = 11;
-                YEAR = 2021;
+                Date = 22;
+                Month = 11;
+                Year = 2021;
+                return false;
             }
-            else if (DATE > days[MONTH - 1])
+            else if (Date > days[Month - 1])
             {
-                Proverka = "Неверный формат даты";
-                DATE =22;
-                MONTH = 11;
-                YEAR = 2021;
+                Date = 22;
+                Month = 11;
+                Year = 2021;
+                return false;
             }
-            else { Proverka = ""; }
+            else { return true; }
             
         }
     }
