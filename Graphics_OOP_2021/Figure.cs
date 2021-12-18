@@ -1,4 +1,4 @@
-﻿using System.Drawing;
+using System.Drawing;
 
 namespace Graphics_OOP_2021
 {
@@ -14,6 +14,5 @@ namespace Graphics_OOP_2021
             this.y = y;
         }
         public abstract void Draw(Graphics g);
-        public abstract bool Property(int x, int y);      
     }
 }
