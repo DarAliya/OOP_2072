@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 
 
@@ -33,11 +33,6 @@ namespace Graphics_OOP_2021
         public override void Draw(Graphics g)
         {
             g.DrawEllipse(Pen, X, Y, r, r);
-        }
-        public override bool Property(int x, int y)
-        {
-            double D = Math.Sqrt(Math.Pow(X + r - x, 2) + Math.Pow(Y - r - y, 2));
-            return D <= r;
         }
     }
 }
