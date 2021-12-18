@@ -1,4 +1,4 @@
-﻿using System.Drawing;
+using System.Drawing;
 
 
 namespace Graphics_OOP_2021
@@ -10,7 +10,7 @@ namespace Graphics_OOP_2021
         protected int h;
         protected int w;
         Pen Pen = new Pen(Color.Blue);
-        public virtual int Heigth
+        public virtual int H
         {
             get
             {
@@ -28,7 +28,7 @@ namespace Graphics_OOP_2021
                 }
             }
         }
-        public virtual int Width
+        public virtual int W
         {
             get
             {
@@ -46,18 +46,14 @@ namespace Graphics_OOP_2021
                 }
             }
         }        
-        public Rect(int x, int y, int height, int width) : base(x, y)
+        public Rect(int x, int y, int h, int w) : base(x, y)
         {
-            this.h = height;
-            this.w = width;
+            this.h = h;
+            this.w = w;
         }
         public override void Draw(Graphics g)
         {
-            g.DrawRectangle(Pen, X, Y, Width, Heigth);
-        }
-        public override bool Property(int x, int y)
-        {
-            return true;
+            g.DrawRectangle(Pen, X, Y, W, H);
         }
     }
 }
